@@ -1,3 +1,50 @@
-body {
-    background-color: rgb(54, 170, 79);
+@use 'hero';
+@use 'trailer';
+@use 'filmes';
+@use 'variable';
+@use 'header';
+@use 'footer';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: "Roboto", system-ui;
+    text-align: center;
+    text-decoration: none;
+}
+
+
+
+// Mixim de diferentes tamanho de Texto
+@mixin text($fontSize: 22px) {
+    font-size: $fontSize;
+    line-height: ($fontSize + 10px);
+    color: variable.$corText;
+}
+
+@mixin title($fontSize: 38px) {
+    font-size: $fontSize;
+    line-height: ($fontSize + 10px);
+    color: variable.$corText;
+}
+// Tamanho de Texto
+.text-small{
+    @include text(16px);
+}
+.text{
+    @include text;
+
+    @media (max-width: 768px) {
+        font-size: 16px;
+    }
+}
+.text-big{
+    @include text(28px);
+}
+
+//Tamanho de titulo
+.title{
+    @include title;
 }

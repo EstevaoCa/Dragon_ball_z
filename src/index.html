@@ -4,12 +4,116 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dragon Ball Z</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/dist/css/main.css">
 </head>
 <body>
-    <h1>Ola Dragon</h1>
+    <header class="header">
+        <div class="header__container">
+            <img class="header__logo" src="./images/logo/logo_imagem.png" alt="">
+            <ul class="header__links">
+                <li class="header__links__item text">
+                    <a class="botao esconder" href="">Contatos</a>
+                </li>
+                <li class="header__links__item text">
+                    <a class="botao esconder" href="">Sobre</a>
+                </li>
+                <li class="header__links__item text">
+                    <a class="botao" href="">Inicio</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <section class="hero">
+        <div class="hero__content">
+            <div class="hero__caixa">
+                <img class="logo__imagem" src="/dist/images/logo/Dragonlogo.png"  alt="">
+                <p class="hero__caixa__text text">Prepare-se para reviver a saga mais épica de todos os tempos com Dragon Ball Z! Junte-se a Goku, Vegeta e seus amigos enquanto eles enfrentam inimigos poderosos, treinam incansavelmente e ultrapassam os limites em batalhas colossais que decidirão o destino do universo. Da chegada dos Saiyajins à luta contra Majin Buu, cada episódio é um marco de ação, drama e superação.</p>
+                <a class="hero__caixa__texto text button" href="https://www.crunchyroll.com/pt-br/series/G9VHN9PPW/dragon-ball-z?srsltid=AfmBOoqO9PZAZFZbI8xbffiAVYaDu8dC_Y6aCxP-XKL8IdaZRD44332w">Venha Assistir</a>
+            </div>
+        </div>
+    </section>
+    <section class="trailer">
+        <video autoplay loop play-inline class="trailer__clip">
+            <source src="/dist/images/video/Dragon Ball DAIMA ｜ OFFICIAL TRAILER.mp4" type="">
+        </video>
+    </section>
+    <section class="filmes">
+        <div class="filmes__content">
+            <ul class="filmes__content__grupo">
+                <li  class="filmes__content__item">
+                    <a href="https://www.crunchyroll.com/pt-br/watch/GN7UDGV8G/the-new-threat">
+                        <img class="icones" src="/dist/images/icone/botao-play.png" alt="">
+                        <img class="play_video" src="/dist/images/video/Ep1.webp" alt="Epizodio 1">
+                    </a>
+                </li>
+                <li  class="filmes__content__item">
+                    <a href="https://www.crunchyroll.com/pt-br/watch/GK9U3QD95/reunions">
+                        <img class="icones" src="/dist/images/icone/botao-play.png" alt="">
+                        <img class="play_video" src="/dist/images/video/ep2.webp" alt="Epizodio 2">
+                    </a>
+                </li>
+                <li  class="filmes__content__item">
+                    <a href="https://www.crunchyroll.com/pt-br/watch/GVWU0J43E/unlikely-alliance">
+                        <img class="icones" src="/dist/images/icone/botao-play.png" alt="">
+                        <img class="play_video" src="/dist/images/video/ep3.webp" alt="Epizodio 3">
+                    </a>
+                </li>
+                <li  class="filmes__content__item">
+                    <a href="https://www.crunchyroll.com/pt-br/watch/GPWUKED3G/piccolos-plan">
+                        <img class="icones" src="/dist/images/icone/botao-play.png" alt="">
+                        <img class="play_video" src="/dist/images/video/ep4.webp" alt="Epizodio 4">
+                    </a>
+                </li>
+                <li  class="filmes__content__item">
+                    <a href="https://www.crunchyroll.com/pt-br/watch/G8WUNE0KG/gohans-rage">
+                        <img class="icones" src="/dist/images/icone/botao-play.png" alt="">
+                        <img class="play_video" src="/dist/images/video/ep5.webp" alt="Epizodio 5">
+                    </a>
+                </li>
+                <li  class="filmes__content__item">
+                    <a href="https://www.crunchyroll.com/pt-br/watch/GD9UVD81M/no-time-like-the-present">
+                        <img class="icones" src="/dist/images/icone/botao-play.png" alt="">
+                        <img class="play_video" src="/dist/images/video/ep6.webp" alt="Epizodio 6">
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </section>
 
-
+    <footer class="footer">
+        <div class="footer__container">
+            <img class="footer__logo" src="/dist/images/logo/logo_imagem.png" alt="Logo">
+            <ul class="footer__links">
+                <li class="footer__links__item">
+                    <div class="language-selector">
+                        <img src="/dist/images/icone/globe.svg" alt="Globo do mundo">
+                        <select>
+                            <option>English</option>
+                            <option selected>Português</option>
+                        </select>
+                    </div>
+                </li>
+                <li class="footer__links__item">
+                    <a href="#" class="text-small">Termos e Condições de Uso</a>
+                </li>
+                <li class="footer__links__item">
+                    <a href="" class="text-small">Política de privacidade</a>
+                </li>
+                <li class="footer__links__item">
+                    <a href="#" class="text-small">Ajuda</a>
+                </li>
+                <li class="footer__links__item">
+                    <a href="" class="text-small">Sobre</a>
+                </li>
+            </ul>
+            <p class="text-small">
+                ® 2022 Dragon Ball Z, is a Company. Todos os direitos reservados. Serviço de assinatura paga. Conteúdo sujeito a disponibilidade.
+            </p>
+        </div>
+    </footer>
     
     <script src="./scripts/main.js"></script>
 </body>

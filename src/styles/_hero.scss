@@ -1,0 +1,46 @@
+@use 'variable';
+
+.hero{
+    background-image: url(/dist/images/hero/goku.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    min-height: 90vh;
+
+    &__content {
+        padding: 0 8vw;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+        justify-content: center;
+        height: 80vh;
+    }
+    &__caixa{
+        width: 100%;
+        max-width: 720px;
+
+        &__texto {
+            margin: 15px 0;
+        }
+        
+    }
+}
+.logo__imagem {
+    width: 100%;
+}
+
+.button{
+    padding: 14px 20px;
+    border: solid 2px #fff;
+    display: inline-block;
+    border-radius: 5px;
+    transition: .3s;
+
+    &:hover {
+        background-color: black;
+        border: solid 2px black;
+        transition: .3s;
+    }
+    
+}
